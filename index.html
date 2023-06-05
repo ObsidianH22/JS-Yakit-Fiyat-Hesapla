@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benzin İstasyonu Uygulaması</title>
+    <link rel="stylesheet" href="css/yakit.css">
+</head>
+<body>
+    <h1>Benzin İstasyonu Uygulaması</h1>
+<div>
+    <p>Yakıt Fiyatları</p>
+    <li>
+        <ul>Dizel  : 24,53 TL</ul>
+        <ul>Benzin : 22,25 TL</ul>
+        <ul>LPG    : 11,1 TL </ul>
+    </li>
+    <h2>Yakıt Tipinizi Seçiniz : <span>
+        <select id = "dropdown" onchange = "selectOption()">
+            <option>Seçiniz</option>
+            <option>Dizel</option>
+            <option>Benzin</option>
+            <option>LPG</option>
+            
+         </select>
+    </span>
+     
+       
+        <h2>Kaç liralık yakıt alacağınızı giriniz : 
+            <span > 
+                <input type="text" id="miktar" size="4"> TL
+            </span>
+        </h2>
+       
+      <button id="hesapla">Hesapla</button>
+
+       <p id="sonuc"> </p>
+
+    <script src="js/yakit.js"></script>
+</body>
+</html>
